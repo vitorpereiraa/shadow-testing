@@ -4,9 +4,12 @@ description: Shadow testing.
 template: splash
 hero:
   tagline: Rollout major changes without risk.
+  image:
+    light: ../../assets/shadow-testing-diagram.svg
+    dark: ../../assets/shadow-testing-diagram-dark.svg
   actions:
     - text: Tell me more!
-      link: /getting-started/shadow-testing/
+      link: /introduction
       icon: right-arrow
 ---
 
@@ -16,14 +19,8 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 
 <CardGrid stagger> 
 	<Card title="What is it?" icon="open-book">
-		Learn more in the [getting started](/getting-started/shadow-testing/) page.
+		Learn more in the [introduction](/introduction) page.
 	</Card>
-	{/* <Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card> */}
 	<Card title="References" icon="magnifier">
 		Learn more in the [microsoft's engineering playbook](https://microsoft.github.io/code-with-engineering-playbook/automated-testing/shadow-testing/).
 	</Card>

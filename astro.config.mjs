@@ -8,13 +8,17 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Home',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/vitorpereiraa' }],
+			social: [
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/vitorpereiraa' },
+				 { icon: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/vitor-pereira-9671771a1' }],
 			sidebar: [
 				{
-					label: 'Getting Started',
-					items: [
-						{ label: 'What is Shadow Testing', slug: 'getting-started/shadow-testing' },
-					],
+					label: 'Introduction',
+					link: '/introduction',
+				},
+				{
+					label: 'Literature Review',
+					link: '/literature-review',
 				}
 			],
 		}),
